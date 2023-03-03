@@ -11,7 +11,7 @@
 </details>
 
 <details>
-<summary>2. 스프링 컨테이너는 무엇인가? (개요) p.40</summary>
+<summary><h1>2. 스프링 컨테이너는 무엇인가? (개요) p.40</h1></summary>
 
 스프링은 스프링 컨테이너(애플리케이션 컨텍스트)이라는 런타임 엔진을 제공한다.
 
@@ -19,7 +19,7 @@
 </details>
 
 <details>
-<summary>3. IoC/DI 는 무엇인가? (개요) p.40</summary>
+<summary><h1>3. IoC/DI 는 무엇인가? (개요) p.40</h1></summary>
 
 객체의 생명주기와 의존관계에 대한 프로그래밍 모델이다.
 
@@ -27,19 +27,19 @@
 </details>
 
 <details>
-<summary>4. 서비스 추상화(PSA)는 무엇인가? (개요) p.41</summary>
+<summary><h1>4. 서비스 추상화(PSA)는 무엇인가? (개요) p.41</h1></summary>
 
 구체적인 기술과 환경에 종속되지 않도록 유연한 추상 계층을 두는 방법이다.
 </details>
 
 <details>
-<summary>5. AOP는 무엇인가? (개요) p.41</summary>
+<summary><h1>5. AOP는 무엇인가? (개요) p.41</h1></summary>
 
 애플리케이션 전반적으로 나타나는 부가적인 기능을 독립적으로 모듈화하는 프로그래밍 모델이다.
 </details>
 
 <details>
-<summary>6. 스프링이 Java를 채택한 이유 p.44</summary>
+<summary><h1>6. 스프링이 Java를 채택한 이유 p.44</h1></summary>
 
 객체지향 프로그래밍이 가능하다. --> 스프링의 관심 대상은 객체이다.
 
@@ -49,17 +49,7 @@
 </details>
 
 <details>
-<summary>6. 스프링이 Java를 채택한 이유 p.53</summary>
-
-객체지향 프로그래밍이 가능하다. --> 스프링의 관심 대상은 객체이다.
-
-스프링은 객체를 설계/사용/개선에 대한 기준을 제공한다.
-
-스프링을 사용한다면 자연스럽게 객체지향 기술/설계/구현에 관한 패턴을 자연스럽게 적용하게 된다.
-</details>
-
-<details>
-<summary>7. 초난감 DAO의 문제점 p.54 ~ p.59</summary>
+<summary><h1>7. 초난감 DAO의 문제점 p.54 ~ p.59</h1></summary>
 
 ```java
 package com.example.tobyspring.chapter01;
@@ -179,7 +169,7 @@ public class Main {
 </details>
 
 <details>
-<summary>8. 관심사의 분리는 무엇일까? p.60 ~ p.70</summary>
+<summary><h1>8. 관심사의 분리는 무엇일까? p.60 ~ p.70</h1></summary>
 
 1. 객체지향 세계에서는 모든 것이 변한다.
 
@@ -196,7 +186,7 @@ public class Main {
 </details>
 
 <details>
-<summary>9. 관심사의 분리를 초난감 DAO에 적용하기 p.62</summary>
+<summary><h1>9. 관심사의 분리를 초난감 DAO에 적용하기 p.62</h1></summary>
 
 ### UserDao의 관심사항
 
@@ -370,7 +360,7 @@ public class DUserDao extends UserDao {
 </details>
 
 <details>
-<summary>10. 상속을 통한 해결방법의 문제점 p.70</summary>
+<summary><h1>10. 상속을 통한 해결방법의 문제점 p.70</h1></summary>
 
 - UserDao가 이미 다른 클래스로부터 상속 받고 있다면, 자바는 다중 상속을 지원하지 않기 때문에 상속을 통한 해결방법에는 한계가 있다.
 
@@ -383,7 +373,7 @@ public class DUserDao extends UserDao {
 </details>
 
 <details>
-<summary>11. 확장을 고려한 DAO p.71 ~ p.82</summary>
+<summary><h1>11. 확장을 고려한 DAO p.71 ~ p.82</h1></summary>
 
 모든 객체는 변하지만, 동일한 방식으로 변하지는 않는다. 이는 변화의 이유/시기/주기 등이 다르다는 것이다.
 
@@ -673,7 +663,7 @@ public class Main {
 </details>
 
 <details>
-<summary>12. 개선된 초난감 DAO로 부터 얻어갈 이론은? p.83 ~ p.86</summary>
+<summary><h1>12. 개선된 초난감 DAO로 부터 얻어갈 이론은? p.83 ~ p.86</h1></summary>
 
 ## OCP (개방 폐쇄 원칙)
 
@@ -707,7 +697,7 @@ UserDao를 사용하는 클라이언트에서 니즈에 따라 바꿔 끼워주�
 </details>
 
 <details>
-<summary>13. 전략 패턴은 무엇인가? p.87</summary>
+<summary><h1>13. 전략 패턴은 무엇인가? p.87</h1></summary>
 
 Main - UserDao - ConnectionMaker는 전략패턴에 해당한다.
 
@@ -725,7 +715,7 @@ UserDao는 컨텍스트, Main은 클라이언트, ConnectionMaker는 전략으�
 </details>
 
 <details>
-<summary>14. 오브젝트 팩토리 p.88 ~ p.92</summary>
+<summary><h1>14. 오브젝트 팩토리 p.88 ~ p.92</h1></summary>
 
 Main은 UserDao가 사용할 Connection을 넘겨주는 책임을 맡게 되었다.
 
@@ -803,7 +793,7 @@ public class DaoFactory {
 </details>
 
 <details>
-<summary>15. IoC p.92 ~ p.94</summary>
+<summary><h1>15. IoC p.92 ~ p.94</h1></summary>
 
 ## 제어의 역전이란 무엇일까?
 
@@ -844,7 +834,7 @@ IoC는 프레임워크나 컨테이너 같이 애플리케이션 전반적인 �
 </details>
 
 <details>
-<summary>16. 스프링 IoC p.95 ~ p.</summary>
+<summary><h1>16. 스프링 IoC p.95 ~ p.</h1></summary>
 
 
 </details>
