@@ -1,5 +1,5 @@
 <details>
-<summary><h1> 1. 스프링이란 무엇인가? p.40 </h1></summary>
+<summary><h2> 1. 스프링이란 무엇인가? p.40 </h2></summary>
 
 | 분류           | 상세                   |
 |--------------|----------------------|
@@ -11,7 +11,7 @@
 </details>
 
 <details>
-<summary><h1>2. 스프링 컨테이너는 무엇인가? (개요) p.40</h1></summary>
+<summary><h2>2. 스프링 컨테이너는 무엇인가? (개요) p.40</h2></summary>
 
 스프링은 스프링 컨테이너(애플리케이션 컨텍스트)이라는 런타임 엔진을 제공한다.
 
@@ -19,7 +19,7 @@
 </details>
 
 <details>
-<summary><h1>3. IoC/DI 는 무엇인가? (개요) p.40</h1></summary>
+<summary><h2>3. IoC/DI 는 무엇인가? (개요) p.40</h2></summary>
 
 객체의 생명주기와 의존관계에 대한 프로그래밍 모델이다.
 
@@ -27,19 +27,19 @@
 </details>
 
 <details>
-<summary><h1>4. 서비스 추상화(PSA)는 무엇인가? (개요) p.41</h1></summary>
+<summary><h2>4. 서비스 추상화(PSA)는 무엇인가? (개요) p.41</h2></summary>
 
 구체적인 기술과 환경에 종속되지 않도록 유연한 추상 계층을 두는 방법이다.
 </details>
 
 <details>
-<summary><h1>5. AOP는 무엇인가? (개요) p.41</h1></summary>
+<summary><h2>5. AOP는 무엇인가? (개요) p.41</h2></summary>
 
 애플리케이션 전반적으로 나타나는 부가적인 기능을 독립적으로 모듈화하는 프로그래밍 모델이다.
 </details>
 
 <details>
-<summary><h1>6. 스프링이 Java를 채택한 이유 p.44</h1></summary>
+<summary><h2>6. 스프링이 Java를 채택한 이유 p.44</h2></summary>
 
 객체지향 프로그래밍이 가능하다. --> 스프링의 관심 대상은 객체이다.
 
@@ -49,7 +49,7 @@
 </details>
 
 <details>
-<summary><h1>7. 초난감 DAO의 문제점 p.54 ~ p.59</h1></summary>
+<summary><h2>7. 초난감 DAO의 문제점 p.54 ~ p.59</h2></summary>
 
 ```java
 package com.example.tobyspring.chapter01;
@@ -169,7 +169,7 @@ public class Main {
 </details>
 
 <details>
-<summary><h1>8. 관심사의 분리는 무엇일까? p.60 ~ p.70</h1></summary>
+<summary><h2>8. 관심사의 분리는 무엇일까? p.60 ~ p.70</h2></summary>
 
 1. 객체지향 세계에서는 모든 것이 변한다.
 
@@ -186,7 +186,7 @@ public class Main {
 </details>
 
 <details>
-<summary><h1>9. 관심사의 분리를 초난감 DAO에 적용하기 p.62</h1></summary>
+<summary><h2>9. 관심사의 분리를 초난감 DAO에 적용하기 p.62</h2></summary>
 
 ### UserDao의 관심사항
 
@@ -360,7 +360,7 @@ public class DUserDao extends UserDao {
 </details>
 
 <details>
-<summary><h1>10. 상속을 통한 해결방법의 문제점 p.70</h1></summary>
+<summary><h2>10. 상속을 통한 해결방법의 문제점 p.70</h2></summary>
 
 - UserDao가 이미 다른 클래스로부터 상속 받고 있다면, 자바는 다중 상속을 지원하지 않기 때문에 상속을 통한 해결방법에는 한계가 있다.
 
@@ -373,7 +373,7 @@ public class DUserDao extends UserDao {
 </details>
 
 <details>
-<summary><h1>11. 확장을 고려한 DAO p.71 ~ p.82</h1></summary>
+<summary><h2>11. 확장을 고려한 DAO p.71 ~ p.82</h2></summary>
 
 모든 객체는 변하지만, 동일한 방식으로 변하지는 않는다. 이는 변화의 이유/시기/주기 등이 다르다는 것이다.
 
@@ -663,7 +663,7 @@ public class Main {
 </details>
 
 <details>
-<summary><h1>12. 개선된 초난감 DAO로 부터 얻어갈 이론은? p.83 ~ p.86</h1></summary>
+<summary><h2>12. 개선된 초난감 DAO로 부터 얻어갈 이론은? p.83 ~ p.86</h2></summary>
 
 ## OCP (개방 폐쇄 원칙)
 
@@ -697,7 +697,7 @@ UserDao를 사용하는 클라이언트에서 니즈에 따라 바꿔 끼워주�
 </details>
 
 <details>
-<summary><h1>13. 전략 패턴은 무엇인가? p.87</h1></summary>
+<summary><h2>13. 전략 패턴은 무엇인가? p.87</h2></summary>
 
 Main - UserDao - ConnectionMaker는 전략패턴에 해당한다.
 
@@ -715,7 +715,7 @@ UserDao는 컨텍스트, Main은 클라이언트, ConnectionMaker는 전략으�
 </details>
 
 <details>
-<summary><h1>14. 오브젝트 팩토리 p.88 ~ p.92</h1></summary>
+<summary><h2>14. 오브젝트 팩토리 p.88 ~ p.92</h2></summary>
 
 Main은 UserDao가 사용할 Connection을 넘겨주는 책임을 맡게 되었다.
 
@@ -793,7 +793,7 @@ public class DaoFactory {
 </details>
 
 <details>
-<summary><h1>15. IoC p.92 ~ p.94</h1></summary>
+<summary><h2>15. IoC p.92 ~ p.94</h2></summary>
 
 ## 제어의 역전이란 무엇일까?
 
@@ -834,7 +834,205 @@ IoC는 프레임워크나 컨테이너 같이 애플리케이션 전반적인 �
 </details>
 
 <details>
-<summary><h1>16. 스프링 IoC p.95 ~ p.</h1></summary>
+<summary><h2>16. 스프링 IoC p.95 ~ p.101</h2></summary>
+
+스프링이 제어권을 가지고 생성/관계부여 하는 객체를 Bean이라고 부른다.
+
+스프링에서 Bean의 생성과 관계설정을 담당하는 IoC오브젝트를 Bean Factory라고 부른다.
+
+일반적으로는 Bean Factory를 더 확장한 Application Context를 주로 사용한다.
+
+Application Context는 별도의 설정 정보를 참고하여 Bean 생성/관계설정의 작업을 총괄하기 때문에
+
+별도로 설정정보를 담고 있는 어떤 것을 가져와 이를 활용하는 IoC엔진으로 볼 수 있다.
+
+이와 같이 별도의 설정정보를 만드는 방법은 다음과 같다.
+
+### @Configuration, @Bean 을 활용하여 설정정보 만들기
+```java
+package com.example.tobyspring.chapter01;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class DaoFactory {
+
+  @Bean
+  public UserDao userDao() {
+    ApplicationContext applicationContext =
+            new AnnotationConfigApplicationContext(DaoFactory.class);
+
+    UserDao dao = applicationContext.getBean("userDao", UserDao.class);
+    return new UserDao(connectionMaker());
+  }
+
+  @Bean
+  public ConnectionMaker connectionMaker() {
+    return new DConnectionMaker();
+  }
+}
+```
+
+@Configuration 애노테이션이 붙은 클래스를 설정정보로 사용하기 위해선
+
+AnnotationConfigApplicationContext라는 객체를 활용하면 된다.
+
+ApplicationContext는 DaoFactory 클래스를 설정정보로 등록하고 @Bean이 붙은 메서드의 이름을 가져와 Bean 목록을 만들어둔다.
+
+### Object Factory vs ApplicationContext (개요)
+
+- Object Factory는 클라이언트가 필요한 오브젝트를 가져오려면 어떤 팩터리 클래스를 사용해야하는지 알아야한다.
+
+- Object Factory는 필요할 때 마다 팩토리 오브젝트를 생성해야한다.
+
+- ApplicationContext는 이 두 과정이 필요없다. 애플리케이션에 전반적으로 적용되는 Context에서 등록하고 꺼내 쓰기만 하면 된다.
+
+- ApplicationContext는 오브젝트가 생성되는 시점/방식/전략/후처리/인터셉팅 등 부가적인 기능을 제공한다.
+
+- ApplicationContext는 getBean()메서드를 통해 특정 Bean을 찾는 기능도 지원한다.
+</details>
+
+<details>
+<summary><h2>17. Object Factory vs ApplicationContext p.102 ~ p.105</h2></summary>
+
+Object Factory에서 userDao를 여러 번 호출한다면?
+
+각각 다른 값을 가진 오브젝트가 생성된다. 
+
+팩터리를 통해 userDao() 메서드를 호출하면 매번 새로운 인스턴스를 반환한다는 것이다.
+
+ApplicationContext에서 getBean()메서드를 여러 번 호출한다면?
+
+각각 같은 값을 가진 오브젝트가 생성된다.
+
+ApplicaitonContext라는 특정 저장소에서 Bean 이름에 해당하는 객체를 꺼내다 만드는 것이기 때문이다.
+
+정리하자면, Object Factory는 동등성을 만족하지만 동일성은 만족하지 않는 객체를 만들게 되고
+
+ApplicationContext는 동등성/동일성을 모두 만족하는 객체를 가질 수 있게 도와준다.
+
+이 결과로 알 수 있듯이 ApplicationContext는 싱글턴으로 객체를 관리한다.
+
+### ApplicationContext가 객체를 싱글턴으로 관리하는 이유는 무엇인가?
+
+Spring은 기본적으로 서버를 제작하기 위해 고안되었다.
+
+그렇기 때문에 클라이언트를 대상으로 비즈니스 로직을 제공해야하는데, 이 때마다 매번 객체를 생성하기에는 그 부담이 커 싱글턴으로 객체를 관리하기로 했다.
+</details>
+
+<details>
+<summary><h2>18. 싱글턴과 Bean 스코프 p.106 ~ p.110</h2></summary>
+
+### 싱글턴 패턴의 문제점
+
+- private 생성자를 갖기 때문에 상속이 불가능하다.
+
+- 테스트하기 힘들다.
+  - 테스트에서 사용될 때 Mock 객체로 대체하기가 힘들다.
+  - 생성자 주입과 같이 동적인 의존성 주입이 쉽지 않다.
+
+- 전역적으로 사용될 수 있고, 하나의 객체만 만들어진다는 것을 보장할 수 없다.
+
+### 싱글턴 레지스트리 - 스프링에서 싱글턴의 단점을 보완해준다.
+
+싱글턴 레지스트리는 위에서 언급한 기존 싱글턴 패턴의 문제점을 보완하여 단점들을 커버해주는 기능을 제공한다.
 
 
+### Bean은 생명주기가 있다.
+
+Bean은 생성/존재/적용 되는 범위가 있고 이것을 Bean의 스코프라고 한다.
+
+일반적인 Bean의 스코프는 싱글턴으로 런타임 시점에 단 하나의 객체가 만들어지며 강제로 제거하지 않는 한 스프링이 실행되는 동안 계속 유지된다.
+
+그리고 프로토타입 스코프가 있는데 이는 컨테이너에 Bean을 요청할 때마다 매번 새로운 Object를 만들어주는 스코프이며
+
+HTTP 요청이 생길 때 마다 생성되는 요청 스코프, 이와 유사한 세션 스코프도 존재한다.
+</details>
+
+<details>
+<summary><h2>20. 의존관계 주입 p.111 ~ p.128</h2></summary>
+
+스프링의 IoC 기능을 동작하게 하는 핵심은 의존관계 주입에 있다.
+
+DI는 객체를 외부로부터 제공(주입)받아 동적으로 의존관계를 맺을 수 있도록 하는 방법이다.
+
+의존관계 주입은 다음 세 가지 조건을 충족해야한다.
+
+- 런타임 시 의존관계가 드러나지 않는다. (인터페이스에만 의존해야한다.)
+
+- 런타임 시점의 의존관계는 컨테이너/팩터리 와 같은 제 3자가 결정한다.
+
+- 의존관계는 객체에 관한 참조를 외부에서 제공한다.
+
+
+### 의존관계 주입의 장점
+
+- 낮은 결합도/OCP
+
+- 필요에 따른 동적인 객체 주입
+
+- 부가기능 추가의 간편함
+
+### 의존관계 주입 방법
+
+- Setter 주입
+
+```java
+public class UserDao {
+    private ConnectionMaker connectionMaker;
+
+  public void setConnectionMaker(ConnectionMaker connectionMaker) {
+      this.connectionMaker = connectionMaker;
+  }
+  
+  @Bean
+  public UserDao userDao() {
+    UserDao userDao = new UserDao();
+    userDao.setConnectionMaker(connectionMaker());
+    return userDao;
+  }
+}
+```
+
+- 일반 메서드 주입
+
+```java
+public class UserDao {
+    private ConnectionMaker connectionMaker;
+    private AdditionalDependency1 additionalDependency1;
+    private AdditionalDependency2 additionalDependency2;
+
+  public void initUserDaoDependency(
+      ConnectionMaker connectionMaker, 
+          AdditionalDependency1 additionalDependency1,
+          AdditionalDependency2 additionalDependency2
+  ) {
+      this.connectionMaker = connectionMaker;
+      this.additionalDependency1 = additionalDependency1;
+      this.additionalDependency2 = additionalDependency2;
+  }
+}
+```
+
+- 생성자 주입
+```java
+public class UserDao {
+    private final ConnectionMaker connectionMaker;
+    private final AdditionalDependency1 additionalDependency1;
+    private final AdditionalDependency2 additionalDependency2;
+
+  public void UserDao(
+      ConnectionMaker connectionMaker, 
+          AdditionalDependency1 additionalDependency1,
+          AdditionalDependency2 additionalDependency2
+  ) {
+      this.connectionMaker = connectionMaker;
+      this.additionalDependency1 = additionalDependency1;
+      this.additionalDependency2 = additionalDependency2;
+  }
+}
+```
 </details>
